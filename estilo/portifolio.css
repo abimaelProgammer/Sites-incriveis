@@ -1,0 +1,590 @@
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap');
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Delicious Handrawn', sans-serif; 
+    font-size: 6px;
+}
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+
+}
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 420px) {
+  body {
+    font-size: 8px;
+  }
+}
+@media (min-width: 560px) {
+  body {
+    font-size: 10px;
+  }
+}
+@media (min-width: 800px) {
+  body {
+    font-size: 12px;
+  }
+}
+@media (min-width: 950px) {
+  body {
+    font-size: 15px;
+  }
+}
+.equipe {
+  display: flex;
+  flex-direction: column;
+}
+.projetos {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+.header-container
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 115vh;
+    background-attachment: fixed;
+    /* background-image: url("../imagens/abimael-foto.png"); */
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-size: 56vmin;
+    box-sizing: border-box;
+    position: relative;
+
+}
+.header-container .info {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  flex: 6;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.header-container .foto {
+  display: flex;
+  flex: 5;
+}
+
+
+
+#abimael-container {
+  background-color: #7B0707;
+  color: #D0DB97;
+  background-image: url("../imagens/foto-abimael.png");
+}
+#abraao-container {
+  background-color: #F6FEAA;
+  color: #153243;
+  background-image: url("../imagens/abraao-foto.png");
+}
+#davi-container {
+  background-color: #153243;
+  color: #DEC5E3;
+  background-image: url("../imagens/foto-davi.png");
+}
+#isaac-container {
+  background-color: #DEC5E3;
+  color: #006C67; 
+  background-image: url("../imagens/isaac-foto.png");
+}
+#cristian-container {
+  background-color: #006C67;
+  color: white;
+  background-image: url("../imagens/cristian-foto.png");
+}
+
+h1
+{
+  font-size: 4em;
+  text-transform: uppercase;
+  letter-spacing: 0.27em;
+}
+h2
+{
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 0.27em;
+}
+
+.social-media
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 5%;
+    max-height: 3em;
+    margin-top: 2em;
+}
+
+.social-media a
+{
+    text-decoration: none;
+    width: 35%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: currentColor;
+    border: 2px solid currentColor;
+    transition: .5s ease-in-out;
+}
+.social-media a:hover{
+  color: #1e1e2a;
+}
+.scroll-media {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .5s, visibility .5s;
+}
+.scroll-text {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: transform .5s, opacity .5s, visibility .5s;
+}
+.header-container:nth-child(2n) .scroll-text {
+  right: -21vw;
+}
+
+.header-container:nth-child(2n - 1) .scroll-text {
+  right: 21vw;
+}
+.header-container:nth-child(2n) .scroll-text.active {
+  transform: translateX(-21vw);
+  opacity: 1;
+  visibility: visible;
+}
+.header-container:nth-child(2n - 1) .scroll-text.active {
+  transform: translateX(21vw);
+  opacity: 1;
+  visibility: visible;
+}
+
+.scroll-media.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.social-media a:hover
+{
+    background-color: white;
+}
+
+/* Menu Três Linhas*/
+.checkbox-container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.checkbox
+{
+    height: 3.5vw;
+    width: 3.5vw;
+    position: fixed;
+    right: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 9999;
+    transition: 400ms ease-in-out 0s;
+}
+.checkbox .trace
+{
+    margin-right: 3rem;
+    width: 3.5vw;
+    height: 0.17vw;
+    background-color: #1e1e2a;
+    position: fixed;
+    border-radius: 0.5vh;
+    transition: 0.5s ease-in-out;
+}
+.checkbox .trace:nth-child(1)
+{
+    top: 0.85vw;
+    transform: rotate(0);
+}
+
+.checkbox .trace:nth-child(2)
+{
+    top: 1.7vw;
+    transform: rotate(0);
+}
+
+.checkbox .trace:nth-child(3)
+{
+    top: 2.55vw;
+    transform: rotate(0);
+}
+#toggle
+{
+    display: none;
+}
+
+/* Menu redondo*/
+.menu
+{
+    position: fixed;
+    top: 1.9vw;
+    right: 2.1vw;
+    background-color: transparent;
+    height: 0.5vh;
+    width: 0.7vw;
+    border-radius: 50%;
+    box-shadow: 0px 0px 0px 0px pink;
+    z-index: 1;
+    transition: 400ms ease-in-out 0s;
+}
+.menu-items
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    opacity: 0;
+    visibility: hidden;
+    transition: 400ms ease-in-out 0s;
+}
+.menu-items ul
+{
+    list-style-type: none;
+
+}
+.menu-items ul li a
+{
+    margin: 0.7vw 0;
+    color: #1e1e2a;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+    font-size: 2.8em;
+}
+/* Animação */
+#toggle:checked + .checkbox .trace:nth-child(1)
+{
+    transform: rotate(45deg);
+    top: 1.75vw;
+}
+#toggle:checked + .checkbox .trace:nth-child(2)
+{
+    transform: translate(-7vw);
+    width: 2.1vw;
+    visibility: hidden;
+    opacity: 0;
+}
+#toggle:checked + .checkbox .trace:nth-child(3)
+{
+    transform: rotate(-45deg);
+    top: 1.75vw;
+}
+#toggle:checked + .checkbox
+{
+    background-color: pink;
+}
+#toggle:checked ~ .menu
+{
+    box-shadow: 0px 0px 0px 100vmax pink;
+    z-index: 1;
+} 
+#toggle:checked ~ .menu-items
+{
+    visibility: visible;
+    opacity: 1;
+}
+
+.card-container
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90%;
+}
+.card 
+{
+    width: 20em;
+    height: 20em;
+    border-radius:100% ;
+    margin: 3em 0 0 0 ;
+    display: flex;
+    align-items: center;
+    background-color: brown;
+    background-position: center ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: grayscale(0.5);
+    color: #1e1e2a;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+.card-container:nth-child(1) .card
+{
+    background-image: url("../imagens/homepage.png");
+}
+
+.card-container:nth-child(2) .card
+{
+    background-image: url("../imagens/formulario.png");
+}
+
+
+.card-container:nth-child(3) .card
+{
+    background-image: url("../imagens/quiz.png");
+}
+
+.card-container:nth-child(4) .card
+{
+    background-image: url("../imagens/login.png");
+}
+
+.card-container:nth-child(5) .card
+{
+    background-image: url("../imagens/cadastro.png");
+}
+
+
+.card-container:nth-child(6) .card
+{
+    background-image: url("../imagens/landing-page.png");
+}
+
+
+.card-container:nth-child(7) .card
+{
+    background-image: url("../imagens/calculadora.png");
+}
+
+.card-container:nth-child(8) .card
+{
+    background-image: url("../imagens/ToDoList.png");
+}
+
+.card-container:nth-child(9) .card
+{
+    background-image: url("../imagens/dashboard.png");
+}
+
+.card-container:nth-child(10) .card
+{
+    background-image: url("../imagens/pagina-de-eventos.png");
+}
+
+.card-container:nth-child(11) .card
+{
+    background-image: url("../imagens/Spotify2.png");
+}
+
+.card-container:nth-child(12) .card
+{
+    background-image: url("../imagens/cronometro.png");
+}
+.card-container:nth-child(13) .card
+{
+    background-image: url("../imagens/pagina-noticias.png");
+}
+
+.card-text
+{
+    font-size: 1.4em;
+    width: 40%;
+    letter-spacing: 0.067em;
+    color: yellowgreen;
+}
+.card-wrapper
+{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.card-wrapper::before
+{
+    content: '';
+    position: absolute;
+    height: 6.7em;
+    width: 6.7em;
+    border-radius: 100%;
+    display: block;
+    border: 1px solid black;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+.card-wrapper h2
+{
+    color: orange;
+    font-size: 1.9em;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+    margin: 0;
+    transition: 0.5s ease-in-out;
+}
+
+#h2_card1, #h2_card4, #h2_card6, #h2_card7
+{
+font-size: 2.7em;
+}
+
+#h2_card7
+{
+font-size: 2.5em;
+}
+
+
+.card-wrapper p
+{
+    color: rgb(255, 0, 0);
+    font-size: 0;
+    visibility: visible;
+    opacity: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.5s ease-in-out;
+
+}
+.card:hover
+{
+    filter: unset;
+}
+/* Borda Visivel (comentar para ver 2º visual  */
+
+/* .card:hover > .card-wrapper::before
+{
+    height: 17.5em;
+    width: 17.5em;
+    opacity: 1;
+} */
+
+/*"venha ver" visivel */
+/* .card:hover > .card-wrapper p
+{
+    opacity: 1;
+    visibility: visible;
+    font-size: 1.5em;
+} */
+
+/* Tira do comentário para ver 2º visual */
+
+.card:hover > .card-wrapper a
+{
+    opacity: 1;
+    visibility: visible;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+/* Tira do comentário para ver 2º visual */
+
+.card-wrapper a
+{
+    color: red;
+    font-size: 0;
+    visibility: visible;
+    opacity: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.5s ease-in-out;
+
+}
+
+
+
+/* LINK E TEXTO */
+
+/* link não visitado*/
+ .texto {
+    color: #1e1e2a ;
+  }
+  
+  /* link visitado */
+ .texto:visited {
+    color: red;
+  }
+  
+  /* mouse sobre o link */
+  .texto:hover {
+    background-color: #1e1e2a;
+    color: white;
+  }
+  
+  .texto
+  {
+    text-decoration: none;
+    padding: 1rem 4rem;
+    border: 1px solid #1e1e2a;
+    min-width: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .5s ease-in-out;
+  }
+body
+{
+    background-color: white;
+}
+  /* fotter */
+
+  .footer
+  {
+    background-color: brown;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: pink;
+    height: auto;
+    margin: 0 0 0 0 ;
+    background-image: url("../imagens/logo.png");
+    background-position: center;
+    background-size:contain;
+    background-repeat: no-repeat;
+    
+  }
+  footer h1
+  {
+    font-size:1em;
+    text-transform: uppercase;
+    letter-spacing: 0.27em;
+  }
+
+#h1_empresa
+{
+  padding-left: 25%;
+  text-transform: uppercase;
+  letter-spacing: 0.27em;
+}
+
+
+#sobre h2
+{
+    color: transparent;
+}
+
+.footer ul li
+{
+    list-style: none;
+}

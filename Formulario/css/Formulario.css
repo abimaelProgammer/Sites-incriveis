@@ -1,0 +1,153 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to right, rgb(90, 20, 220), rgb(36, 17, 71));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    color: white;
+    position: sticky;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 0.9rem;
+    border-radius: 0.9rem;
+    width: 20%;
+    min-width: 23.8rem;
+    max-width: 50rem;
+   
+}
+fieldset{
+    border: 3px solid darkslateblue;
+
+}
+legend{
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid darkslateblue;
+    padding: 10px;
+    text-align: center;
+    background-color: darkslateblue;
+    border-radius: 8px; 
+}
+.inputBox{
+    position: relative;
+
+}
+.inputUser{
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+    letter-spacing: 2px;
+
+}
+.labelInput{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: .5s;
+
+}
+.inputUser:focus ~ .labelInput,
+.inputUser:valid ~ .labelInput{
+    top: -20px;
+    font-size: 12px;
+    color: darkslateblue;
+
+}
+#data_nascimento, #etnia, #formação_acadêmica, #checkBox{
+    border: none;
+    padding: 8px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 15px;
+
+}
+#submit_1{
+    background-image: linear-gradient(to right,rgb(12, 54, 201), rgb(90, 20, 220));
+    width: 100%;
+    border: none;
+    padding: 15px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#submit_1:hover{
+    background-image: linear-gradient(to right,rgb(0, 75, 180), rgb(80, 25, 190));
+}
+
+#submit_2{
+    background-image: linear-gradient(to right,rgb(12, 54, 201), rgb(90, 20, 220));
+    width: 100%;
+    border: none;
+    padding: 15px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#submit_2:hover{
+    background-image: linear-gradient(to right,rgb(0, 75, 180), rgb(80, 25, 190));
+}
+
+:focus::placeholder {
+    transition: all 0.2s ease-out;
+    color:white;
+    opacity: 1;
+}
+
+
+::placeholder {
+    color: transparent;
+    opacity: 0;
+}
+
+textarea{
+    border: none;
+    padding: 8px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 15px;
+    max-width: 325px;
+    overflow-y: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.inputBox textarea:focus::placeholder {
+    transition: all 0.2s ease-out;
+    color: #000000;
+    opacity: 1;
+    
+  }
+.inputBox textarea::placeholder {
+    color: transparent;
+    opacity: 1;
+    
+}
+
+.btn-voltar{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .5rem;
+    padding-right: 1rem;
+    border:var(--border);
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    color:var(--blue);
+    cursor: pointer;
+    font-size: 1rem;
+    background: #fff;
+    top: 1%;
+    left: 1%;
+    position: fixed;
+}
+

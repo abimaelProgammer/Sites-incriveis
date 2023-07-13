@@ -1,0 +1,2 @@
+# Formulário
+Esse formulário utiliza a coletar informações dos usuários de um website, permitindo que os visitantes insiram dados como nomes, endereços de e-mail, números de telefone, comentários e outros tipos de informações relevantes.

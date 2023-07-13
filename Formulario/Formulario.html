@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/Formulario.css" media="screen">
+    <link rel="icon" type="image/x-icon" href="image/GameSoft.ico">
+    <title>Página de Formulário</title>
+    
+</head>
+
+<body>
+    <div class="box">
+        <form>
+            <fieldset>
+                <legend><b>Formulário de Inscrição</b></legend>
+                <br>
+                <div class="inputBox">
+                    <input type="text" name="nome" id="nome" class="inputUser" placeholder="Ex: Nilton Darmont Coelho" required>
+                    <label for="nome" class="labelInput">Nome completo</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="email" name="email" id="email" class="inputUser" placeholder="nome@gmail.com" required>
+                    <label for="email" class="labelInput">Email</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="text" name="cpf" id="cpf" class="inputUser" placeholder="XXX.XXX.XXX-XX" required>
+                    <label for="cpf" class="labelInput">CPF</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="text" name="rg" id="rg" class="inputUser" placeholder="XXXXXXXXXX-X" required>
+                    <label for="rg" class="labelInput">RG</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="tel" name="telefone" id="telefone" class="inputUser" placeholder="(XX) XXXXX-XXXX" required>
+                    <label for="telefone" class="labelInput">Telefone</label>
+                </div>
+                <p>Sexo:</p>
+                <input type="radio" id="feminino" name="genero" value="feminino" required>
+                <label for="feminino">Feminino</label>
+                <br>
+                <input type="radio" id="masculino" name="genero" value="masculino" required>
+                <label for="masculino">Masculino</label>
+                <br>
+                <input type="radio" id="outro" name="genero" value="outro" required>
+                <label for="outro">Outro</label>
+                <br><br>
+                <label for="data_nascimento"><b>Data de Nascimento:</b></label>
+                <input type="date" name="data_nascimento" id="data_nascimento" required>
+                <br><br><br>
+                <div class="inputBox">
+                    <input type="text" name="cidade" id="cidade" class="inputUser" placeholder="Ex: Fortaleza" required>
+                    <label for="cidade" class="labelInput">Cidade</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="text" name="estado" id="estado" class="inputUser" placeholder="Ex: Ceará" required>
+                    <label for="estado" class="labelInput">Estado</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="text" name="endereco" id="endereco" class="inputUser" placeholder="Ex: Vila Natália" required>
+                    <label for="endereco" class="labelInput">Endereço</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="text" name="complemento" id="complemento" class="inputUser" placeholder="Ex: 404" required>
+                    <label for="complemento" class="labelInput">Complemento</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="text" name="bairro" id="bairro" class="inputUser" placeholder="Ex: Presidente Kennedy" required>
+                    <label for="bairro" class="labelInput">Bairro</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="text" name="ponto_referência" id="ponto_referência" class="inputUser" placeholder="Ex: Rio Mar Kennedy" required>
+                    <label for="ponto_referência" class="labelInput">Ponto de Referência</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="text" name="cep" id="cep" class="inputUser" placeholder="XXXXX-XXX" required>
+                    <label for="cep" class="labelInput">CEP</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                <label for="etnia"><b>Etnia:</b></label>
+                <select id="etnia" required>
+                    <option selected disabled value="">Selecione</option>
+                    <option>Branco</option>
+                    <option>Pardo</option>
+                    <option>Preto</option>
+                    <option>Amarelo</option>
+                    <option>Indígena</option>
+                  </select>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="text" name="filiação_1" id="filiação_1" class="inputUser" placeholder="Ex: Roberta Queiroga Darmont" required>
+                    <label for="filiação_1" class="labelInput">Filiação 1</label>
+                </div> 
+                <br><br>
+                <div class="inputBox">
+                    <input type="text" name="filiação_2" id="filiação_2" class="inputUser" placeholder="Ex: Aurélio Teles Coelho" required>
+                    <label for="filiação_2" class="labelInput">Filiação 2</label>
+                </div>   
+                <br><br>
+                <div class="inputBox">
+                    <input type="text" name="nacionalidade" id="nacionalidade" class="inputUser" placeholder="Ex: Brasileira" required>
+                    <label for="nacionalidade" class="labelInput">Nacionalidade</label>
+                </div> 
+                <br><br>
+                <div class="inputBox">
+                    <input type="text" name="estado_civil" id="estado_civil" class="inputUser"placeholder="Ex: Solteiro" required>
+                    <label for="estado_civil" class="labelInput">Estado Civil</label>
+                </div> 
+                <br>
+                <div class="inputBox">
+                <p><label for="formação_acadêmica"><b>Formação Acadêmica:</b></label></p>
+                <select id="formação_acadêmica" required>
+                    <option selected disabled value="">Selecione</option>
+                  <option>Ensino Infantil Completo</option>
+                  <option>Ensino Infantil Incompleto</option>
+                  <option>Ensino Fundamental Completo</option>
+                  <option>Ensino Fundamental Incompleto</option>
+                  <option>Ensino Médio Completo</option>
+                  <option>Ensino Médio Incompleto</option>
+                  <option>Ensino Superior Completo</option>
+                  <option>Ensino Superior Incompleto</option>
+                  </select>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                <label class="checkBox"><b>Quais suas experiências em desenvolvimento de jogos ?</b></label><br><br>
+                    <input type="checkBox" id="tecnologia1" name="tecnologia1" value="Designer de Games">
+                    <label for="tecnologia1"> Designer de Games</label>
+                    <br>
+                    <input type="checkBox" id="tecnologia2" name="tecnologia2" value="Animador">
+                    <label for="tecnologia2"> Animador</label>
+                    <br>
+                    <input type="checkBox" id="tecnologia3" name="tecnologia3" value="Técnico em 3D">
+                    <label for="tecnologia3"> Técnico em 3D</label>
+                    <br>
+                    <input type="checkBox" id="tecnologia4" name="tecnologia4" value="Programador">
+                    <label for="tecnologia4"> Programador</label>
+                    <br>
+                    <input type="checkBox" id="tecnologia5" name="tecnologia5" value="Roteirista">
+                    <label for="tecnologia5"> Roteirista </label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                <label class="experiencia"><b>Escreva um pouco sobre você e suas experiências em desenvolvimento de jogos:</b></label><br><br>
+                     <textarea rows="6" style="width: 21.5em" id="experiencia" name="experiencia" placeholder="Informe em resumo alguns pontos principais, como: cargo, atividade exercida, nome de empresas e período trabalhado, entre outros pontos relevantes."></textarea>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input class="form-check-input" type="checkBox" value="" id="invalidCheck" required>
+                    <label class="form-check-label" for="invalidCheck">Confirmo a veracidade das informações.</label>
+                </div>
+                <br>
+                <button class="botao-concluido" type="submit" name="submit" id="submit_1">Concluído</button>
+                <br><br>
+                <button class="botao-concluido" onclick="history.back()" type="submit" name="submit" id="submit_2">Voltar</button>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>

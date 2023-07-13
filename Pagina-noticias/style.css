@@ -1,0 +1,41 @@
+.navbar-nav {
+  justify-content: space-between;
+}
+.navbar .form-inline {
+  display: flex;
+  align-content: center;
+}
+.navbar .form-inline #searchInput {
+  width: 90%;
+}
+.dropdown-body {
+  display: flex;
+  height: 30vh;
+  overflow-y: scroll;
+  flex-flow: column;
+}
+.news-title a {
+  text-decoration: none;
+}
+.news button[data-option] {
+  border: none;
+  background-color: transparent;
+}
+.category-menu {
+  justify-content: center;
+}
+.news-description {
+  max-height: 15vh;
+  overflow: hidden;
+}
+
+.news-description.expanded {
+  max-height: 100%;
+}
+.show-more {
+  display: none;
+}
+
+.template {
+  display: none;
+}

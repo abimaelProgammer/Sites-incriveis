@@ -1,0 +1,33 @@
+main{
+    padding-top:30px;
+}
+body {
+    background-image: url("imagens/folha.avif");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 50%;
+}
+#voltar{
+    padding:10px;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background-color:coral;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    border:none;
+  }
+input{
+    padding:15px;
+}
+#cadastrar{
+    background-color:coral;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    border:none;
+}
+footer{
+    text-align: left;
+    bottom: 0px;
+}
